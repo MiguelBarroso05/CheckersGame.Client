@@ -1,13 +1,7 @@
-import { useEffect } from "react"
-
-
+import { useEffect } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    fetch('http://localhost:5296/api/todotask/')
-      .then(res => res.text())
-      .then(data => console.log(data))
-  }, [])
+  useEffect(() => {}, []);
 
   return (
     <>
@@ -17,9 +11,7 @@ const Home = () => {
         <button>Join room</button>
       </div>
     </>
+  );
+};
 
-
-  )
-}
-
-export default Home
+export default Home;
